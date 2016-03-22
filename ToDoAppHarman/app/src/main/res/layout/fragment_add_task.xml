@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txt_date"
+        android:layout_below="@+id/edt_txt_task_desc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:freezesText="true"
+        android:layout_marginTop="@dimen/margin_20"
+        />
+
+    <EditText
+        android:layout_margin="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_txt_task_name"
+        android:hint="@string/task_name"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_margin="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edt_txt_task_desc"
+        android:layout_below="@+id/edt_txt_task_name"
+        android:hint="@string/task_description"/>
+
+    <Button
+        android:layout_margin="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add_task"
+        android:id="@+id/btn_add_task"
+        android:layout_below="@+id/txt_date"
+        android:textSize="@dimen/txt_size_14"/>
+
+</RelativeLayout>

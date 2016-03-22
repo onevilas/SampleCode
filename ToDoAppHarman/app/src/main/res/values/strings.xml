@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="task_name">Task Name*</string>
+    <string name="task_description">Task Description</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_add_task">Add Task</string>
+    <string name="error_please_enter_task_name">Please enter Task name</string>
+    <string name="dialog_header_alert">Alert</string>
+    <string name="please_click_back_to_exit">Press again to exit</string>
+    <string name="task_updated_success">Task updated</string>
+    <string name="task_deleted_success">Task deleted</string>
+    <string name="task_added_success">New Task Added</string>
+    <string name="error_inserting_task_to_db">There was some error while adding Task to database.</string>
+</resources>

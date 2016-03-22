@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_view_task_name"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_margin="@dimen/margin_10"
+        android:singleLine="true"
+        android:hint="@string/task_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edt_view_task_desc"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_below="@+id/edt_view_task_name"
+        android:hint="@string/task_description"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:freezesText="true"
+        android:id="@+id/txt_view_date"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_below="@+id/edt_view_task_desc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_below="@id/txt_view_date"
+        android:weightSum="2">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_save"
+            android:text="@string/btn_save"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_delete"
+            android:text="@string/btn_delete"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+The task description is: (on Android)
+
+Need to write simple ToDo list application.
+Application needs to show list of existing ToDo tasks:
+Each task should have Name and Date of creation.
+Each task can have description.
+Need to have ability to add new ToDo tasks in the list.
+Need to have ability to delete existing ToDo tasks.
+All tasks need to be saved persistently, so after application restarts all the tasks should be available:
+Need to use SQLite data base
+Need to support landscape and portrait mode
